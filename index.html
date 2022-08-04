@@ -6,11 +6,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/venders/swiper.min.css">
 </head>
 
 <body>
-    <h1>Test</h1>
+    <div id="global-container">
+        <div id="content">
+            <!-- here  -->
+            <div class="hero">
+                <!-- Slider main container -->
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="here__title">Enjoy Rich</div>
+                            <img src="img/image-1.jpg" alt="image1">
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="here__title">Fantastic</div>
+                            <img src="img/image-2.jpg" alt="image2">
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="here__title">Experience</div>
+                            <img src="img/image-3.jpg" alt="image3">
+                        </div>
+                    </div>
+                    <div class="here__footer">
+                        <img class="here__downarrow" src="img/arrow.svg" alt="scroll bar">
+                        <span class="here__scrolltext">scroll</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/venders/swiper.min.js"></script>
+    <script src="js/libs/hero-slider.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
