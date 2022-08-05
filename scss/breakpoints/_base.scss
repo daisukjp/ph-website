@@ -6,6 +6,11 @@ Stylesheet: ベーススタイル
 body {
   font-family: 'Source Serif Pro', 'Roboto', sans-serif;
 }
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
 .font-sm {
   font-size: 14px;
 }
