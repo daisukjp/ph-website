@@ -102,11 +102,43 @@
 }
 /******************************************************************
 
-Stylesheet: base style
+Stylesheet: ベーススタイル
 
 ******************************************************************/
 body {
-  font-family: "Kameron", "Noto Sans JP", sans-serif;
+  font-family: "Source Serif Pro", "Roboto", sans-serif;
+}
+
+.font-sm, .sub-title {
+  font-size: 14px;
+}
+
+.font-md, .popular__title {
+  font-size: 17px;
+}
+
+.font-lr, .houses__title {
+  font-size: 17px;
+}
+
+.font-lg, .main-title {
+  font-size: 25px;
+}
+
+.mb-sm, .popular__title, .houses__title, .travel__img, .travel__sub {
+  margin-bottom: 16px !important;
+}
+
+.pb-sm, .popular__container, .travel__texts {
+  padding-bottom: 16px !important;
+}
+
+.mb-lg, .popular__btn, .houses, .travel {
+  margin-bottom: 80px !important;
+}
+
+.pb-lg {
+  padding-bottom: 80px !important;
 }
 
 img {
@@ -408,14 +440,14 @@ main {
 @media screen and (min-width: 480px) {
   /******************************************************************
 
-  Stylesheet: 480px
+  Stylesheet: 480px以上(スマホの横向き)のモニタで適用
 
   ******************************************************************/
 }
 @media screen and (min-width: 600px) {
   /******************************************************************
 
-  Stylesheet: 600px
+  Stylesheet: 600px以上のタブレットやモニタで適用
 
   ******************************************************************/
   .flex, .travel__inner, .houses__inner, .popular__container, .footer__nav, .footer__ul {
@@ -453,7 +485,7 @@ main {
 @media screen and (min-width: 960px) {
   /******************************************************************
 
-  Stylesheet: 960px
+  Stylesheet: 960px以上のモニタで適用
 
   ******************************************************************/
   .font-sm, .sub-title {
@@ -505,7 +537,7 @@ main {
 @media screen and (min-width: 1280px) {
   /******************************************************************
 
-  Stylesheet: 1280px
+  Stylesheet: 1280px以上のモニタで適用
 
   ******************************************************************/
   .travel__inner {

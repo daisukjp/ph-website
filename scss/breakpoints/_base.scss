@@ -1,11 +1,37 @@
 /******************************************************************
 
-Stylesheet: base style
+Stylesheet: ベーススタイル
 
 ******************************************************************/
 body {
-  font-family: "Kameron", "Noto Sans JP", sans-serif;
+  font-family: 'Source Serif Pro', 'Roboto', sans-serif;
 }
+.font-sm {
+  font-size: 14px;
+}
+.font-md {
+  font-size: 17px;
+}
+.font-lr {
+  font-size: 17px;
+}
+.font-lg {
+  font-size: 25px;
+}
+
+.mb-sm {
+  margin-bottom: 16px !important;
+}
+.pb-sm {
+  padding-bottom: 16px !important;
+}
+.mb-lg {
+  margin-bottom: 80px !important;
+}
+.pb-lg {
+  padding-bottom: 80px !important; 
+}
+
 img {
   max-width: 100%;
   vertical-align: bottom;
