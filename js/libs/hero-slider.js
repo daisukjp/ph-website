@@ -1,4 +1,4 @@
-class HereSlider {
+class heroSlider {
     constructor(el) {
         this.el = el;
         this.swiper = this._initSwiper();

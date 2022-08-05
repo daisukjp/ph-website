@@ -1,35 +1,34 @@
-@import 'modules/_variables';
-@import 'modules/mixin';
-@import 'modules/_btn';
-@import 'modules/_here-slider';
-@import 'modules/_texst-animation';
-@import 'modules/_image-slide';
+@import "modules/_variables";
+@import "modules/mixin";
+@import "modules/_btn";
+@import "modules/_hero-slider";
+@import "modules/_texst-animation";
+@import "modules/_image-slide";
 
 // mobile
 @import "breakpoints/_base";
 // desktop
 // 480
 @media screen and (min-width: 480px) {
-    @import "breakpoints/480up";
+  @import "breakpoints/480up";
 }
 // 600
 @media screen and (min-width: 600px) {
-    @import "breakpoints/600up";
+  @import "breakpoints/600up";
 }
 // 960
 @media screen and (min-width: 960px) {
-    @import "breakpoints/960up";
+  @import "breakpoints/960up";
 }
 // 1280
 @media screen and (min-width: 1280px) {
-    @import "breakpoints/1280up";
+  @import "breakpoints/1280up";
 }
 
-@media (min-resolution: 192dpi),
-    (-webkit-min-device-pixel-ratio: 2) {
-        @import "breakpoints/2x";
-    }
+@media (min-resolution: 192dpi), (-webkit-min-device-pixel-ratio: 2) {
+  @import "breakpoints/2x";
+}
 
 @media print {
-    @import "breakpoints/print";
+  @import "breakpoints/print";
 }

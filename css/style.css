@@ -172,12 +172,15 @@
 .swiper-slide-active > img {
   transform: none;
 }
-.swiper-slide-active .here__title {
+.swiper-slide-active .hero__title {
   opacity: 1;
   transform: translate(-50%, -50%);
 }
 
-.here__title {
+.hero {
+  overflow: hidden;
+}
+.hero__title {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -188,7 +191,7 @@
   opacity: 0;
   transition: opacity 0.6s ease 1s, transform 0.6s ease 1s;
 }
-.here__footer {
+.hero__footer {
   position: absolute;
   left: 50%;
   bottom: 20px;
@@ -198,7 +201,7 @@
   width: 22px;
   overflow: hidden;
 }
-.here__downarrow {
+.hero__downarrow {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -218,7 +221,7 @@
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
-.here__scrolltext {
+.hero__scrolltext {
   position: absolute;
   left: -8px;
   top: 11px;
@@ -422,7 +425,6 @@
 .cover-slide {
   position: relative;
   overflow: hidden;
-  margin-bottom: 80vh;
 }
 .cover-slide::after {
   content: "";
