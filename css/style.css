@@ -953,15 +953,18 @@ main {
     flex-direction: row;
     flex-wrap: wrap;
   }
+  .houses__inner {
+    justify-content: space-between;
+  }
   .houses__item {
-    flex-basis: 50%;
+    flex-basis: 48%;
     margin-bottom: 60px;
   }
   .popular__container {
     justify-content: space-between;
   }
   .popular__item {
-    flex-basis: 47%;
+    flex-basis: 48%;
   }
   .travel__inner {
     padding: 50px;
@@ -1005,8 +1008,11 @@ main {
   .pb-lg {
     padding-bottom: 150px !important;
   }
+  .popular__container {
+    justify-content: space-between;
+  }
   .popular__item {
-    flex-basis: 25%;
+    flex-basis: 23%;
   }
   .popular__img {
     height: 335px;
@@ -1041,9 +1047,6 @@ main {
   ******************************************************************/
   .travel__inner {
     padding: 50px 150px;
-  }
-  .popular__item {
-    flex-basis: 23%;
   }
   .side {
     display: block;

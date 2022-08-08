@@ -28,8 +28,11 @@ Stylesheet: 960px以上のモニタで適用
 }
 
 .popular {
+  &__container {
+    justify-content: space-between;
+  }
   &__item {
-    flex-basis: 25%;
+    flex-basis: 23%;
   }
 
   &__img {
@@ -65,9 +68,9 @@ Stylesheet: 960px以上のモニタで適用
 }
 
 .mobile-menu {
-    &__btn {
-        display: none;
-    }
+  &__btn {
+    display: none;
+  }
 }
 
 .swiper-slide {
