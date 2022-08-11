@@ -17,25 +17,25 @@
 
 <body>
     <div id="global-container">
-        <div class="container">
-            <div class="mobile-menu__cover">
-            </div>
+        <div id="container">
+            <div class="mobile-menu__cover"></div>
+            <div class="nav-trigger"></div>
             <header class="header">
-                <div class="logo">
-                    <img src="img/logo.svg" alt="logo" class="logo__img">
-                    <span class="logo__stay">Stays</span>
-                    <span class="logo__world">World</span>
-                </div>
-                <nav>
-                    <ul class="header__ul">
-                        <li class="header__li"><a href="#">Service</a></li>
-                        <li class="header__li"><a href="#">Company</a></li>
-                        <li class="header__li">
-                            <a class="btn filled" href="#">Contact</a>
-                        </li>
-                    </ul>
-                </nav>
                 <div class="header__inner">
+                    <div class="logo">
+                        <img src="img/logo.svg" alt="logo" class="logo__img">
+                        <span class="logo__stay">Stay</span>
+                        <span class="logo__world">World</span>
+                    </div>
+                    <nav class="header__nav">
+                        <ul class="header__ul">
+                            <li class="header__li"><a href="#">Service</a></li>
+                            <li class="header__li"><a href="#">Company</a></li>
+                            <li class="header__li">
+                                <a class="btn filled" href="#">Reserve</a>
+                            </li>
+                        </ul>
+                    </nav>
                     <button class="mobile-menu__btn">
                         <span></span>
                         <span></span>
@@ -72,6 +72,12 @@
                     </div>
                 </div>
                 <div id="main-content">
+                    <aside class="side left">
+                        <div class="side__inner">
+                            <a class="twitter icon" href="#">Twitter</a>
+                            <a class="fb icon" href="#">Facebook</a>
+                        </div>
+                    </aside>
                     <main>
                         <section class="travel">
                             <div class="travel__inner">
@@ -210,12 +216,17 @@
 
                         </section>
                     </main>
+                    <aside class="side right">
+                        <div class="side__inner">
+                            <span>&copy;Daisuke Sato</span>
+                        </div>
+                    </aside>
                 </div>
             </div>
             <footer class="footer">
                 <div class="logo">
                     <img src="img/logo.svg" alt="logo" class="logo__img">
-                    <span class="logo__stay">Stays</span>
+                    <span class="logo__stay">Stay</span>
                     <span class="logo__world">World</span>
                 </div>
                 <nav class="footer__nav">
@@ -232,6 +243,11 @@
             </footer>
         </div>
         <nav class="mobile-menu">
+            <div class="logo">
+                <img src="img/logo.svg" alt="logo" class="logo__img">
+                <span class="logo__stay">Stay</span>
+                <span class="logo__world">World</span>
+            </div>
             <ul class="mobile-menu__main">
                 <li class="mobile-menu__item">
                     <a class="mobile-menu__link" href="#">
@@ -283,6 +299,7 @@
     <script src="js/libs/scroll.js"></script>
     <script src="js/libs/text-animation.js"></script>
     <script src="js/libs/hero-slider.js"></script>
+    <script src="js/libs/mobile-menu.js"></script>
     <script src="js/main.js"></script>
 </body>
 

@@ -108,6 +108,7 @@
 
     &:hover {
       color: $cWhite;
+      position: relative;
 
       &::before {
         transform: none;

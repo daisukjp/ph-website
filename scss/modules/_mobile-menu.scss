@@ -10,6 +10,11 @@ $cSubTitle: #535353;
   top: 60px;
   width: 300px;
 
+  & .logo {
+    padding: 0 40px;
+    font-size: 38px;
+  }
+
   &__btn {
     background-color: unset;
     border: none;
@@ -39,6 +44,7 @@ $cSubTitle: #535353;
     opacity: 0;
     visibility: hidden;
     transition: opacity 1s;
+    z-index: 200;
     cursor: pointer;
   }
   &__main {
@@ -58,7 +64,7 @@ $cSubTitle: #535353;
     display: block;
     margin-top: 30px;
     color: $cBlack;
-    text-decoration: none;
+    text-decoration: none !important;
   }
 }
 
