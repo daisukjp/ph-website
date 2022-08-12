@@ -5,6 +5,7 @@ Stylesheet: ベーススタイル
 ******************************************************************/
 body {
   font-family: "Source Serif Pro", "Roboto", sans-serif;
+  font-family: "Varela Round", "Source Serif Pro", "Roboto", sans-serif;
 }
 img {
   max-width: 100%;
@@ -268,7 +269,9 @@ main {
   display: flex;
 
   &__img {
-    width: 0.7em;
+    width: 1.1em;
+    height: 1.1em;
+    margin-top: 0.1em;
   }
 
   &__world {

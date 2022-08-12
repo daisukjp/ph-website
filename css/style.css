@@ -761,6 +761,7 @@ Stylesheet: ベーススタイル
 ******************************************************************/
 body {
   font-family: "Source Serif Pro", "Roboto", sans-serif;
+  font-family: "Varela Round", "Source Serif Pro", "Roboto", sans-serif;
 }
 
 img {
@@ -991,7 +992,9 @@ main {
   display: flex;
 }
 .logo__img {
-  width: 0.7em;
+  width: 1.1em;
+  height: 1.1em;
+  margin-top: 0.1em;
 }
 .logo__world {
   color: #904669;

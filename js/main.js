@@ -75,7 +75,7 @@ class Main {
         this.setobservers = new ScrollObserber('.appear', this._inviewAnimation);
         this.setobservers = new ScrollObserber('.tween-animate-title', this._textAnimation, {rootMargin: "-200px 0px"});
         this.setobservers = new ScrollObserber('.swiper', this._toggleSlideAnimation.bind(this), {once:false});
-        this.setobservers = new ScrollObserber('#main-content', this._sideAnimation.bind(this), {once:false, rootMargin: "-300px 0px"});
+        this.setobservers = new ScrollObserber('#main-content', this._sideAnimation.bind(this), {once:false, rootMargin: "-400px 0px"});
 
             // this.hero.start();
     
