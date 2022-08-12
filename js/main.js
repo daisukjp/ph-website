@@ -1,48 +1,30 @@
 document.addEventListener('DOMContentLoaded', function () {
-
-    // /scroll
-    // const cb = function (el, inview) {
-    //     if(inview) {
-    //         const ta = new TweenTextAnimation(el);
-    //         ta.animate();
-    //     }
-    // }
-    // const so = new ScrollObserber('.tween-animate-title', cb);
-
-    // const _inviewAnimation = function(el, inview) {
-    //     if(inview) {
-    //         el.classList.add('inview');
-    //     } else {
-    //         el.classList.remove('inview');
-    //     }
-    // }
-
-  
-
-    // const header = document.querySelector('.header');
-    // const _navAnimation = function(el, inview) {
-    //     if(inview) {
-    //         header.classList.remove('triggered');
-    //     } else {
-    //         header.classList.add('triggered');
-    //     }
-    // }
-
-    // const so3 = new ScrollObserber('.nav-trigger', _navAnimation, {once:false});
-    
-    new MobileMenu();
-    new Main();
+    const main = new Main();
 });
 
 class Main {
     constructor() {
         this.header = document.querySelector('.header');
+        this.sides = document.querySelectorAll('.side');
         this._observers = [];
         this._init();
     }
 
+    set setobservers(val) {
+        this._observers.push(val);
+    }
+
+    get getobservers() {
+        return this._observers;
+    }
+
     _init() {
+        new MobileMenu();
         this.hero = new heroSlider('.swiper');
+        Pace.on('done', this._paceDone.bind(this));
+    }
+
+    _paceDone() {
         this._scrollInit();
     }
 
@@ -62,6 +44,14 @@ class Main {
         }
     }
 
+    _sideAnimation(el, inview) {
+        if(inview) {
+            this.sides.forEach(side => side.classList.add('inview'));
+        } else {
+            this.sides.forEach(side => side.classList.remove('inview'));
+        }
+    }
+
     _textAnimation(el, inview) {
         if(inview) {
             const ta = new TweenTextAnimation(el);
@@ -69,22 +59,26 @@ class Main {
         }
     }
 
-    _toggleSlideAnimation() {
-        
+    _toggleSlideAnimation(el, inview) {
+        if(inview) {
+            this.hero.start();
+        } else {
+            this.hero.stop();
+        }
     }
 
+
+
     _scrollInit() {
-        this._observers.push(
-            new ScrollObserber('.nav-trigger', this._navAnimation.bind(this), {once:false})
-        );
-        this._observers.push(
-            new ScrollObserber('.cover-slide', this._inviewAnimation)
-        );
-        this._observers.push(
-            new ScrollObserber('.tween-animate-title', this._textAnimation)
-            hero.start({delay: 2000});
-        );
-        n
+        this.setobservers = new ScrollObserber('.nav-trigger', this._navAnimation.bind(this), {once:false});
+        this.setobservers = new ScrollObserber('.cover-slide', this._inviewAnimation);
+        this.setobservers = new ScrollObserber('.appear', this._inviewAnimation);
+        this.setobservers = new ScrollObserber('.tween-animate-title', this._textAnimation, {rootMargin: "-200px 0px"});
+        this.setobservers = new ScrollObserber('.swiper', this._toggleSlideAnimation.bind(this), {once:false});
+        this.setobservers = new ScrollObserber('#main-content', this._sideAnimation.bind(this), {once:false, rootMargin: "-300px 0px"});
+
+            // this.hero.start();
+    
         
     }
 }
