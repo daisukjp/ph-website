@@ -4,8 +4,7 @@ Stylesheet: ベーススタイル
 
 ******************************************************************/
 body {
-  font-family: "Source Serif Pro", "Roboto", sans-serif;
-  font-family: "Varela Round", "Source Serif Pro", "Roboto", sans-serif;
+  font-family: 'Roboto', 'Source Serif Pro', 'Michroma', sans-serif;
 }
 img {
   max-width: 100%;
@@ -52,7 +51,7 @@ img {
   font-size: 17px;
 }
 .font-lg {
-  font-size: 25px;
+  font-size: 1.1em;
 }
 .mb-sm {
   margin-bottom: 16px !important;
@@ -86,7 +85,7 @@ img {
   flex-direction: column;
 }
 .purple {
-  color: $cWineRed;
+  color: $cGray;
 }
 
 #main-content {
@@ -145,7 +144,6 @@ main {
   }
 
   & .logo {
-    font-size: 38px;
     justify-content: center;
   }
 
@@ -161,11 +159,18 @@ main {
   @extend .content-width;
   @extend .mb-lg;
 
+  &__description {
+    background-color: rgba(231, 229, 229, 0.8);;
+    padding: 1em;
+    border-radius: 10px
+  }
+
   &__inner {
     @extend .flex;
     justify-content: space-between;
     padding: 15px;
-    background-color: $cBgGray;
+    background-color: rgba(61, 158, 200, 0.4);
+    border-radius: 20px;
     position: relative;
     z-index: 0;
   }
@@ -226,7 +231,7 @@ main {
   &__inner {
     position: relative;
     @include p-base($top: 10%, $height: 90%) {
-      background: $cBgGray;
+      background: rgba(61, 158, 200, 0.5);
     }
   }
   &__header {
@@ -255,18 +260,74 @@ main {
     height: 150px;
     overflow: hidden;
     margin-bottom: 5px;
+    position: relative;
+    border-radius: 20px;
+
+	&::before {
+		content: '';
+		position: absolute;
+		width: 0;
+		height: 0;
+		border-style: solid;
+		top: -15px;
+		right: -15px;
+		border-width: 0 100px 100px 0;
+		border-color: transparent #053e62 transparent transparent;
+	}
+	&::after {
+		content: '';
+		position: absolute;
+		width: 0;
+		height: 0;
+		border-style: solid;
+		bottom: -15px;
+		left: -15px;
+		border-width: 100px 0 0 100px;
+		border-color: transparent transparent transparent #053e62;
+	}
+
+    
 
     & > img {
       object-fit: cover;
       height: 100%;
       width: 100%;
     }
+
   }
 }
 
+// img {
+// 	position: relative;
+// 	&::before {
+// 		content: '';
+// 		position: absolute;
+// 		width: 0;
+// 		height: 0;
+// 		border-style: solid;
+// 		top: -15px;
+// 		right: -15px;
+// 		border-width: 0 100px 100px 0;
+// 		border-color: transparent #053e62 transparent transparent;
+// 	}
+// 	&::after {
+// 		content: '';
+// 		position: absolute;
+// 		width: 0;
+// 		height: 0;
+// 		border-style: solid;
+// 		bottom: -15px;
+// 		left: -15px;
+// 		border-width: 100px 0 0 100px;
+// 		border-color: transparent transparent transparent #053e62;
+// 	}
+// }
+
 .logo {
-  font-size: 42px;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Michroma';
 
   &__img {
     width: 1.1em;
@@ -275,9 +336,54 @@ main {
   }
 
   &__world {
-    color: $cWineRed;
+    color: $cGray;
+    font-size: 1.5em;
+    margin-bottom: 0;
+  }
+
+  &__japan {
+    font-size: 0.8em;
+    margin-bottom: 0;
+    color: #1b67a9;
   }
 }
+
+.logo-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__world {
+    color: $cGray;
+    font-size: 0.8em;
+    margin-bottom: 0;
+  }
+
+  &__japan {
+    font-size: 0.4em;
+    margin-bottom: 0;
+    color: #1b67a9;
+  }
+}
+
+.logo-side {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__world {
+    color: $cGray;
+    font-size: 0.8em;
+    margin-bottom: 0;
+  }
+
+  &__japan {
+    font-size: 0.4em;
+    margin-bottom: 0;
+    color: #1b67a9;
+  }
+}
+
 
 .footer {
   padding: 60px 0;
