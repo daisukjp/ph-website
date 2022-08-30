@@ -101,6 +101,35 @@
   border-top: 3px solid #333333;
   border-right: 3px solid #333333;
 }
+.btn.filled-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  width: 200px;
+  color: #2285b1;
+  font-size: 13px;
+  font-weight: 400;
+  border-radius: 35px;
+  border: 2px solid #2285b1;
+}
+.btn.filled-top::after {
+  content: "";
+  width: 5px;
+  height: 5px;
+  border-top: 3px solid #2285b1;
+  border-right: 3px solid #2285b1;
+  transform: rotate(45deg);
+}
+.btn.filled-top:hover {
+  color: #333333;
+  text-decoration: none;
+  background-color: #b1dbed;
+}
+.btn.filled-top:hover::after {
+  border-top: 3px solid #333333;
+  border-right: 3px solid #333333;
+}
 .btn.letter-spacing:hover {
   background-color: black;
   letter-spacing: 3px;
@@ -760,7 +789,7 @@
 }
 
 .menu-open #container {
-  transform: translate(-300px, 60px);
+  transform: translate(-300px, 0);
   box-shadow: 0 8px 40px -10px rgba(0, 0, 0, 0.8);
 }
 .menu-open .mobile-menu__cover {
@@ -973,10 +1002,11 @@ main {
   background-color: rgba(231, 229, 229, 0.8);
   padding: 1em;
   border-radius: 10px;
+  margin-bottom: 10px;
 }
 .travel__inner {
   justify-content: space-between;
-  padding: 15px;
+  padding: 10px;
   background-color: rgba(61, 158, 200, 0.4);
   border-radius: 20px;
   position: relative;

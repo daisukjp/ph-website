@@ -162,13 +162,14 @@ main {
   &__description {
     background-color: rgba(231, 229, 229, 0.8);;
     padding: 1em;
-    border-radius: 10px
+    border-radius: 10px;
+    margin-bottom: 10px
   }
 
   &__inner {
     @extend .flex;
     justify-content: space-between;
-    padding: 15px;
+    padding: 10px;
     background-color: rgba(61, 158, 200, 0.4);
     border-radius: 20px;
     position: relative;

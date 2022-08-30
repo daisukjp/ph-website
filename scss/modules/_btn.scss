@@ -60,6 +60,36 @@
     }
   }
 
+  &.filled-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    width: 200px;
+    color: #2285b1;
+    font-size: 13px;
+    font-weight: 400;
+    border-radius: 35px;
+    border: 2px solid #2285b1;
+    &::after {
+      content: '';
+      width: 5px;
+      height: 5px;
+      border-top: 3px solid #2285b1;
+      border-right: 3px solid #2285b1;
+      transform: rotate(45deg);
+    }
+    &:hover {
+      color: #333333;
+      text-decoration: none;
+      background-color: #b1dbed;
+      &::after {
+        border-top: 3px solid #333333;
+        border-right: 3px solid #333333;
+      }
+    }
+  }
+
 
 
   &.letter-spacing:hover {
