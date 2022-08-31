@@ -790,7 +790,6 @@
 
 .menu-open #container {
   transform: translate(-300px, 0);
-  box-shadow: 0 8px 40px -10px rgba(0, 0, 0, 0.8);
 }
 .menu-open .mobile-menu__cover {
   opacity: 1;
@@ -1332,9 +1331,6 @@ main {
   }
   .mobile-menu__btn {
     display: none;
-  }
-  .swiper-slide {
-    box-shadow: 0 8px 40px -10px rgba(0, 0, 0, 0.8);
   }
 }
 @media screen and (min-width: 1280px) {
