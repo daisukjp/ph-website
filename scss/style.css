@@ -324,6 +324,7 @@
   opacity: 0;
   transition: opacity 0.6s ease 1s, transform 0.6s ease 1s;
 }
+
 .hero__footer {
   position: absolute;
   left: 50%;
