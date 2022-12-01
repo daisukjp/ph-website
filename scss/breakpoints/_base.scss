@@ -1,8 +1,3 @@
-/******************************************************************
-
-Stylesheet: ベーススタイル
-
-******************************************************************/
 body {
   font-family: 'Roboto', 'Source Serif Pro', 'Michroma', sans-serif;
 }
@@ -84,8 +79,69 @@ img {
   display: flex;
   flex-direction: column;
 }
+
+// cookie
+.hide {
+  visibility: hidden;
+}
+
+.show {
+  visibility: visible;
+}
+
+/* -- Code for the Cookie Compliance popover window -- */
+
+#cookiePopup {
+  background-color: #ffffff;
+  position: absolute;
+  left: 5%;
+  bottom: 0;
+  font-size: 14px;
+  width: 90%;
+  box-shadow: 0 0 2em rgba(5, 0, 31, 0.15);
+  font-family: "Poppins", sans-serif;
+  text-align: justify;
+  line-height: 1.8em;
+  margin: 0 auto;
+  padding: 2em 1.4em;
+  border-radius: 6px;
+  transition: all 0.5s ease-in-out;
+  z-index: 100;
+
+  p {
+    text-align: center;
+    margin: 1.4em 0;
+  }
+
+  button {
+    background-color: #3467dd;
+    border: none;
+    color: #ffffff;
+    font-size: 1.2em;
+    padding: 1em 1.4em;
+    display: block;
+    position: relative;
+    margin: auto;
+    border-radius: 5px;
+  }
+
+  a {
+    color: #3467dd;;
+  }
+}
+
 .purple {
-  color: $cGray;
+  color: $cDark;
+}
+
+/* banners */
+.banner-729,
+.banner-250 {
+  align-items: center;
+  text-align: center;
+}
+.banner-729 img{
+	margin: 1% auto;
 }
 
 #main-content {
@@ -111,7 +167,7 @@ main {
   left: 0;
   width: 100%;
   height: $navHeight;
-  background-color: transparent;
+  background-color: #ffffffeb;
   display: flex;
   align-items: center;
   z-index: 100;
@@ -155,22 +211,25 @@ main {
   }
 }
 
+.bg-transe-image {
+  background: url(/img/new-bg-2.png);
+  background-size: cover;
+  background-attachment: fixed
+}
+
 .travel {
   @extend .content-width;
   @extend .mb-lg;
 
   &__description {
-    background-color: rgba(231, 229, 229, 0.8);;
-    padding: 1em;
     border-radius: 10px;
-    margin-bottom: 10px
+    margin-bottom: 10px;
   }
 
   &__inner {
     @extend .flex;
     justify-content: space-between;
     padding: 10px;
-    background-color: rgba(61, 158, 200, 0.4);
     border-radius: 20px;
     position: relative;
     z-index: 0;
@@ -191,10 +250,6 @@ main {
       object-fit: cover;
       width: 100%;
       height: 100%;
-    }
-
-    &.inview {
-      box-shadow: inset 0 0 30px $cBlack;
     }
   }
 
@@ -225,6 +280,28 @@ main {
   &__btn {
     text-align: center;
     flex-basis: 100%;
+    margin-top: 76px;
+  }
+}
+
+.bg-image {
+  background: url(/img/camping-n.jpg);
+  background-size: cover;
+  min-height: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 600px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  color: #fff;
+  font-family: 'Kalam', cursive;
+
+  h1 {
+    font-size: calc(2rem + 1.5vw);
   }
 }
 
@@ -254,6 +331,7 @@ main {
   &__btn {
     text-align: center;
     flex-basis: 100%;
+    margin-top: 76px;
     @extend .mb-lg;
   }
 
@@ -466,6 +544,10 @@ main {
       transform: rotate(90deg);
     }
   }
+}
+
+.contents-head {
+  margin-bottom: 50px;
 }
 
 .icon {

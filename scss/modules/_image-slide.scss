@@ -1,7 +1,11 @@
 .cover-slide {
   position: relative;
   overflow: hidden;
-  border-radius: 30px;
+  box-shadow: 0 0 20px rgb(0 0 0 / 10%);
+
+  p {
+    padding: 10px 20px;
+  }
 
   &::after {
     content: "";

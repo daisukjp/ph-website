@@ -324,7 +324,6 @@
   opacity: 0;
   transition: opacity 0.6s ease 1s, transform 0.6s ease 1s;
 }
-
 .hero__footer {
   position: absolute;
   left: 50%;
@@ -559,7 +558,10 @@
 .cover-slide {
   position: relative;
   overflow: hidden;
-  border-radius: 30px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+.cover-slide p {
+  padding: 10px 20px;
 }
 .cover-slide::after {
   content: "";
@@ -831,11 +833,6 @@
   transform: translateY(-11px) rotate(-135deg);
 }
 
-/******************************************************************
-
-Stylesheet: ベーススタイル
-
-******************************************************************/
 body {
   font-family: "Roboto", "Source Serif Pro", "Michroma", sans-serif;
 }
@@ -917,7 +914,7 @@ img {
 .content-width, .footer, .popular__container, .popular__header, .houses, .travel, .header__inner {
   width: 90%;
   margin: 0 auto;
-  max-width: 1070px;
+  max-width: 1280px;
 }
 
 .main-title {
@@ -935,8 +932,64 @@ img {
   flex-direction: column;
 }
 
+.hide {
+  visibility: hidden;
+}
+
+.show {
+  visibility: visible;
+}
+
+/* -- Code for the Cookie Compliance popover window -- */
+#cookiePopup {
+  background-color: #ffffff;
+  position: absolute;
+  left: 5%;
+  bottom: 0;
+  font-size: 14px;
+  width: 90%;
+  box-shadow: 0 0 2em rgba(5, 0, 31, 0.15);
+  font-family: "Poppins", sans-serif;
+  text-align: justify;
+  line-height: 1.8em;
+  margin: 0 auto;
+  padding: 2em 1.4em;
+  border-radius: 6px;
+  transition: all 0.5s ease-in-out;
+  z-index: 100;
+}
+#cookiePopup p {
+  text-align: center;
+  margin: 1.4em 0;
+}
+#cookiePopup button {
+  background-color: #3467dd;
+  border: none;
+  color: #ffffff;
+  font-size: 1.2em;
+  padding: 1em 1.4em;
+  display: block;
+  position: relative;
+  margin: auto;
+  border-radius: 5px;
+}
+#cookiePopup a {
+  color: #3467dd;
+}
+
 .purple {
-  color: #535353;
+  color: #222222;
+}
+
+/* banners */
+.banner-729,
+.banner-250 {
+  align-items: center;
+  text-align: center;
+}
+
+.banner-729 img {
+  margin: 1% auto;
 }
 
 #main-content {
@@ -962,7 +1015,7 @@ main {
   left: 0;
   width: 100%;
   height: 100px;
-  background-color: transparent;
+  background-color: rgba(255, 255, 255, 0.9215686275);
   display: flex;
   align-items: center;
   z-index: 100;
@@ -998,16 +1051,19 @@ main {
   align-items: center;
 }
 
+.bg-transe-image {
+  background: url(/img/new-bg-2.png);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 .travel__description {
-  background-color: rgba(231, 229, 229, 0.8);
-  padding: 1em;
   border-radius: 10px;
   margin-bottom: 10px;
 }
 .travel__inner {
   justify-content: space-between;
   padding: 10px;
-  background-color: rgba(61, 158, 200, 0.4);
   border-radius: 20px;
   position: relative;
   z-index: 0;
@@ -1024,9 +1080,6 @@ main {
   width: 100%;
   height: 100%;
 }
-.travel__img.inview {
-  box-shadow: inset 0 0 30px black;
-}
 .travel__texts.inview .travel__title::before {
   transform: translateY(-50%);
 }
@@ -1034,6 +1087,27 @@ main {
 .houses__btn {
   text-align: center;
   flex-basis: 100%;
+  margin-top: 76px;
+}
+
+.bg-image {
+  background: url(/img/camping-n.jpg);
+  background-size: cover;
+  min-height: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 600px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  color: #fff;
+  font-family: "Kalam", cursive;
+}
+.bg-image h1 {
+  font-size: calc(2rem + 1.5vw);
 }
 
 .popular__inner {
@@ -1056,6 +1130,7 @@ main {
 .popular__btn {
   text-align: center;
   flex-basis: 100%;
+  margin-top: 76px;
 }
 .popular__img {
   height: 150px;
@@ -1214,6 +1289,10 @@ main {
   transform: rotate(90deg);
 }
 
+.contents-head {
+  margin-bottom: 50px;
+}
+
 .icon {
   position: relative;
 }
@@ -1258,14 +1337,14 @@ main {
     justify-content: space-between;
   }
   .houses__item {
-    flex-basis: 48%;
+    flex-basis: 32%;
     margin-bottom: 20px;
   }
   .popular__container {
     justify-content: space-between;
   }
   .popular__item {
-    flex-basis: 48%;
+    flex-basis: 32%;
   }
   .travel__inner {
     padding: 50px;
