@@ -78,24 +78,24 @@
   align-items: center;
   margin: 0 auto;
   width: 100px;
-  color: #2285b1;
+  color: #68B984;
   font-size: 18px;
   font-weight: 700;
   border-radius: 35px;
-  border: 2px solid #2285b1;
+  border: 2px solid #68B984;
 }
 .btn.filled::after {
   content: "";
   width: 5px;
   height: 5px;
-  border-top: 3px solid #2285b1;
-  border-right: 3px solid #2285b1;
+  border-top: 3px solid #68B984;
+  border-right: 3px solid #68B984;
   transform: rotate(45deg);
 }
 .btn.filled:hover {
   color: #333333;
   text-decoration: none;
-  background-color: #b1dbed;
+  background-color: #efffef;
 }
 .btn.filled:hover::after {
   border-top: 3px solid #333333;
@@ -107,24 +107,24 @@
   align-items: center;
   margin: 0;
   width: 200px;
-  color: #2285b1;
+  color: #68B984;
   font-size: 13px;
   font-weight: 400;
   border-radius: 35px;
-  border: 2px solid #2285b1;
+  border: 2px solid #68B984;
 }
 .btn.filled-top::after {
   content: "";
   width: 5px;
   height: 5px;
-  border-top: 3px solid #2285b1;
-  border-right: 3px solid #2285b1;
+  border-top: 3px solid #68B984;
+  border-right: 3px solid #68B984;
   transform: rotate(45deg);
 }
 .btn.filled-top:hover {
   color: #333333;
   text-decoration: none;
-  background-color: #b1dbed;
+  background-color: #efffef;
 }
 .btn.filled-top:hover::after {
   border-top: 3px solid #333333;
@@ -161,7 +161,7 @@
   color: #333;
   font-size: 18px;
   font-weight: 700;
-  background-color: rgba(61, 158, 200, 0.5);
+  background-color: rgba(104, 219, 93, 0.5);
   border-radius: 50vh;
   transition: 0.3s;
 }
@@ -172,7 +172,7 @@
   left: -5px;
   width: calc(100% - 4px);
   height: calc(100% - 4px);
-  border: 2px solid #3d9ec8;
+  border: 2px solid #51c83d;
   border-radius: 50vh;
   transition: 0.2s;
 }
@@ -186,7 +186,7 @@
 }
 .btn.slide-bg:hover {
   text-decoration: none;
-  background-color: #c2e5f6;
+  background-color: #ccf6c2;
 }
 .btn.slide-bg:hover::before {
   top: 0;
@@ -214,7 +214,7 @@
   left: -5px;
   width: calc(100% - 4px);
   height: calc(100% - 4px);
-  border: 2px solid #3d9ec8;
+  border: 2px solid #51c83d;
   border-radius: 50vh;
   transition: 0.2s;
 }
@@ -228,7 +228,7 @@
 }
 .btn.cover-3d:hover {
   text-decoration: none;
-  background-color: #c2e5f6;
+  background-color: #ccf6c2;
 }
 .btn.cover-3d:hover::before {
   top: 0;
@@ -944,10 +944,9 @@ img {
 #cookiePopup {
   background-color: #ffffff;
   position: absolute;
-  left: 5%;
   bottom: 0;
   font-size: 14px;
-  width: 90%;
+  width: 100%;
   box-shadow: 0 0 2em rgba(5, 0, 31, 0.15);
   font-family: "Poppins", sans-serif;
   text-align: justify;
@@ -1121,7 +1120,7 @@ main {
   left: 0;
   width: 100%;
   height: 90%;
-  background: rgba(61, 158, 200, 0.5);
+  background: rgba(106, 233, 98, 0.5);
 }
 .popular__container {
   position: relative;
@@ -1184,10 +1183,10 @@ main {
   font-size: 1.5em;
   margin-bottom: 0;
 }
-.logo__japan {
+.logo__alberta {
   font-size: 0.8em;
   margin-bottom: 0;
-  color: #1b67a9;
+  color: #68B984;
 }
 
 .logo-bottom {
@@ -1200,10 +1199,10 @@ main {
   font-size: 0.8em;
   margin-bottom: 0;
 }
-.logo-bottom__japan {
+.logo-bottom__alberta {
   font-size: 0.4em;
   margin-bottom: 0;
-  color: #1b67a9;
+  color: #68B984;
 }
 
 .logo-side {
@@ -1216,10 +1215,10 @@ main {
   font-size: 0.8em;
   margin-bottom: 0;
 }
-.logo-side__japan {
+.logo-side__alberta {
   font-size: 0.4em;
   margin-bottom: 0;
-  color: #1b67a9;
+  color: #51c83d;
 }
 
 .footer {

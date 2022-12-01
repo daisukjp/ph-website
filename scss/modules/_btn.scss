@@ -36,23 +36,23 @@
     align-items: center;
     margin: 0 auto;
     width: 100px;
-    color: #2285b1;
+    color: #68B984;
     font-size: 18px;
     font-weight: 700;
     border-radius: 35px;
-    border: 2px solid #2285b1;
+    border: 2px solid #68B984;
     &::after {
       content: '';
       width: 5px;
       height: 5px;
-      border-top: 3px solid #2285b1;
-      border-right: 3px solid #2285b1;
+      border-top: 3px solid #68B984;
+      border-right: 3px solid #68B984;
       transform: rotate(45deg);
     }
     &:hover {
       color: #333333;
       text-decoration: none;
-      background-color: #b1dbed;
+      background-color: #efffef;
       &::after {
         border-top: 3px solid #333333;
         border-right: 3px solid #333333;
@@ -66,23 +66,23 @@
     align-items: center;
     margin: 0;
     width: 200px;
-    color: #2285b1;
+    color: #68B984;
     font-size: 13px;
     font-weight: 400;
     border-radius: 35px;
-    border: 2px solid #2285b1;
+    border: 2px solid #68B984;
     &::after {
       content: '';
       width: 5px;
       height: 5px;
-      border-top: 3px solid #2285b1;
-      border-right: 3px solid #2285b1;
+      border-top: 3px solid #68B984;
+      border-right: 3px solid #68B984;
       transform: rotate(45deg);
     }
     &:hover {
       color: #333333;
       text-decoration: none;
-      background-color: #b1dbed;
+      background-color: #efffef;
       &::after {
         border-top: 3px solid #333333;
         border-right: 3px solid #333333;
@@ -130,7 +130,7 @@
     color: #333;
     font-size: 18px;
     font-weight: 700;
-    background-color: rgba(61, 158, 200, 0.5);
+    background-color: rgb(104 219 93 / 50%);
     border-radius: 50vh;
     transition: 0.3s;
 
@@ -141,7 +141,7 @@
 		left: -5px;
 		width: calc(100% - 4px);
 		height: calc(100% - 4px);
-		border: 2px solid #3d9ec8;
+		border: 2px solid #51c83d;
 		border-radius: 50vh;
 		transition: 0.2s;
     }
@@ -159,7 +159,7 @@
         left: 0;
       }
       text-decoration: none;
-      background-color: #c2e5f6;
+      background-color: #ccf6c2;
     }
   }
   &.cover-3d {
@@ -184,7 +184,7 @@
 		left: -5px;
 		width: calc(100% - 4px);
 		height: calc(100% - 4px);
-		border: 2px solid #3d9ec8;
+		border: 2px solid #51c83d;
 		border-radius: 50vh;
 		transition: 0.2s;
     }
@@ -202,7 +202,7 @@
         left: 0;
       }
       text-decoration: none;
-      background-color: #c2e5f6;
+      background-color: #ccf6c2;
     }
   }
 }

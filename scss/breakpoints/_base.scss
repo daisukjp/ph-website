@@ -94,10 +94,9 @@ img {
 #cookiePopup {
   background-color: #ffffff;
   position: absolute;
-  left: 5%;
   bottom: 0;
   font-size: 14px;
-  width: 90%;
+  width: 100%;
   box-shadow: 0 0 2em rgba(5, 0, 31, 0.15);
   font-family: "Poppins", sans-serif;
   text-align: justify;
@@ -309,7 +308,7 @@ main {
   &__inner {
     position: relative;
     @include p-base($top: 10%, $height: 90%) {
-      background: rgba(61, 158, 200, 0.5);
+      background: rgb(106 233 98 / 50%);
     }
   }
   &__header {
@@ -420,10 +419,10 @@ main {
     margin-bottom: 0;
   }
 
-  &__japan {
+  &__alberta {
     font-size: 0.8em;
     margin-bottom: 0;
-    color: #1b67a9;
+    color: #68B984;
   }
 }
 
@@ -438,10 +437,10 @@ main {
     margin-bottom: 0;
   }
 
-  &__japan {
+  &__alberta {
     font-size: 0.4em;
     margin-bottom: 0;
-    color: #1b67a9;
+    color: #68B984;
   }
 }
 
@@ -456,10 +455,10 @@ main {
     margin-bottom: 0;
   }
 
-  &__japan {
+  &__alberta {
     font-size: 0.4em;
     margin-bottom: 0;
-    color: #1b67a9;
+    color: #51c83d;
   }
 }
 
