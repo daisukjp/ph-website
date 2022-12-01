@@ -946,7 +946,7 @@ img {
   position: absolute;
   bottom: 0;
   font-size: 14px;
-  width: 100%;
+  width: 80%;
   box-shadow: 0 0 2em rgba(5, 0, 31, 0.15);
   font-family: "Poppins", sans-serif;
   text-align: justify;
@@ -1104,11 +1104,48 @@ main {
   justify-content: center;
   color: #fff;
   font-family: "Kalam", cursive;
+  -webkit-animation: zoom 5s 1;
+  animation: zoom 5s 1;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
 }
 .bg-image h1 {
   font-size: calc(2rem + 1.5vw);
 }
 
+@-webkit-keyframes zoom {
+  0% {
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+  }
+}
+
+@keyframes zoom {
+  0% {
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+  }
+}
 .popular__inner {
   position: relative;
 }
@@ -1419,7 +1456,8 @@ main {
 
   ******************************************************************/
   .travel__inner {
-    padding: 50px 150px;
+    padding: 50px 20px;
+    align-items: center;
   }
   .side {
     display: block;
