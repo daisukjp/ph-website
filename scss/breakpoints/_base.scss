@@ -96,16 +96,17 @@ img {
   position: absolute;
   bottom: 0;
   font-size: 14px;
-  width: 80%;
+  // width: 80%;
   box-shadow: 0 0 2em rgba(5, 0, 31, 0.15);
   font-family: "Poppins", sans-serif;
   text-align: justify;
   line-height: 1.8em;
-  margin: 0 auto;
+  // margin: 0 auto;
   padding: 2em 1.4em;
   border-radius: 6px;
   transition: all 0.5s ease-in-out;
   z-index: 100;
+  margin: 20px;
 
   p {
     text-align: center;
@@ -214,6 +215,17 @@ main {
   background: url(/img/new-bg-2.png);
   background-size: cover;
   background-attachment: fixed
+}
+
+.bg-transe-image-2 {
+  background: url(/img/camping-2.png);
+  background-size: cover;
+  background-attachment: fixed
+}
+
+.color-btn {
+  text-decoration: none;
+  color: #68B984;
 }
 
 .travel {
